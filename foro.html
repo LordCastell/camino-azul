@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foro - Camino Azul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos adicionales para el foro */
+    .forum-container {
+      margin: 40px 0;
+    }
+    .forum-topic {
+      background-color: #fafafa;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .forum-topic h3 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      color: #4f8fc1;
+    }
+    .forum-topic p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+    .forum-topic a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .forum-topic a:hover {
+      text-decoration: underline;
+    }
+    .contact-form {
+      margin: 40px 0;
+      padding: 20px;
+      background-color: #eef7ff;
+      border-radius: 8px;
+      border-left: 5px solid #4f8fc1;
+    }
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .contact-form textarea {
+      resize: vertical;
+    }
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4f8fc1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .contact-form button:hover {
+      background-color: #3572a5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Camino Azul" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="ips.html">IPS en Bucaramanga</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="foro.html" style="background: rgba(255,255,255,0.3);">Foro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Héroe -->
+  <section class="hero">
+    <img src="img/inicio1.jpg" alt="Imagen de Bienvenida" class="hero-img" />
+    <div class="hero-text">
+      <h1>Camino Azul</h1>
+      <p>Debate y Comparte Información</p>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner"></section>
+
+  <!-- Contenido principal del foro -->
+  <main class="container">
+    <h1>Foro de Debate y Apoyo</h1>
+    <p>En este espacio podrás compartir tus experiencias, dudas y consejos sobre el TEA, terapias y estrategias de inclusión. Participa en los distintos hilos de discusión y colabora con la comunidad.</p>
+    
+    <!-- Lista de temas de foro -->
+    <section class="forum-container">
+      <!-- Tema 1 -->
+      <div class="forum-topic">
+        <h3>Experiencias en Terapia ABA</h3>
+        <p>Comparte tus vivencias y estrategias sobre el tratamiento mediante análisis conductual aplicado. ¿Qué resultados has notado y qué recomendaciones tienes para otras familias?</p>
+        <a href="foro_topic1.html">Ver más detalles</a>
+      </div>
+      <!-- Tema 2 -->
+      <div class="forum-topic">
+        <h3>Desafíos y Logros en el Desarrollo del Lenguaje</h3>
+        <p>Discute las dificultades y los avances en la estimulación del lenguaje en niños con TEA. ¿Qué métodos han funcionado en tu caso y qué recursos recomendarías?</p>
+        <a href="foro_topic2.html">Ver más detalles</a>
+      </div>
+      <!-- Tema 3 -->
+      <div class="forum-topic">
+        <h3>Inclusión Escolar y Social</h3>
+        <p>Debate sobre las mejores prácticas para fomentar la inclusión en el ámbito escolar y comunitario. ¿Cómo se puede mejorar la integración y qué apoyos son necesarios?</p>
+        <a href="foro_topic3.html">Ver más detalles</a>
+      </div>
+      <!-- Tema 4 -->
+      <div class="forum-topic">
+        <h3>Recursos y Materiales de Estimulación</h3>
+        <p>Comparte y discute recursos educativos y terapéuticos. ¿Qué materiales han sido útiles para potenciar el desarrollo de habilidades en niños con TEA?</p>
+        <a href="foro_topic4.html">Ver más detalles</a>
+      </div>
+      <!-- Tema 5 -->
+      <div class="forum-topic">
+        <h3>Apoyo Emocional para Familias</h3>
+        <p>Un espacio para compartir inquietudes, logros y consejos sobre cómo manejar el estrés y encontrar apoyo emocional. ¿Qué estrategias te han ayudado a ti y a otros en momentos difíciles?</p>
+        <a href="foro_topic5.html">Ver más detalles</a>
+      </div>
+    </section>
+
+    <!-- Recuadro de contacto para enviar mensajes al foro -->
+    <section class="contact-form">
+      <h2>Contacto y Comentarios</h2>
+      <form action="https://formspree.io/f/xvgkbvzb" method="POST">
+        <label for="email">Tu correo:</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+        
+        <label for="message">Tu mensaje:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Camino Azul. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

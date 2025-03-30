@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ubicación de IPS en Bucaramanga</title>
+  <!-- Fuente Montserrat para un estilo moderno -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos adicionales para la página de IPS */
+    #map {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+    }
+
+    .ips-list {
+      margin: 40px 0;
+    }
+
+    .ips-list h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #4f8fc1;
+    }
+
+    .ips-item {
+      background-color: #fafafa;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .ips-item h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.4rem;
+    }
+
+    .ips-item p {
+      margin: 5px 0;
+    }
+
+    .ips-item a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .ips-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Camino Azul" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="ips.html" style="background: rgba(255, 255, 255, 0.3);">IPS en Bucaramanga</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="foro.html">Foro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección hero -->
+  <section class="hero">
+    <img src="img/inicio1.jpg" alt="Imagen de Bienvenida" class="hero-img" />
+    <div class="hero-text">
+      <h1>Camino Azul</h1>
+      <p>Encuentra IPS Especializadas en Bucaramanga</p>
+    </div>
+  </section>
+
+  <!-- Banner con el fondo repetido -->
+  <section class="banner"></section>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <h1>Ubicación de IPS en Bucaramanga</h1>
+    <p>Selecciona en el mapa la IPS para ver su ubicación aproximada (coordenadas de ejemplo). Luego encontrarás un listado detallado con información de contacto y oportunidades que ofrecen.</p>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <!-- Listado de IPS -->
+    <section class="ips-list">
+      <h2>Listado de IPS</h2>
+
+      <div class="ips-item">
+        <h3>Niños de papel IPS</h3>
+        <p><strong>WhatsApp:</strong> 318 2106656</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://ninosdepapel.org" target="_blank" rel="noopener">https://ninosdepapel.org</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Especializada en evaluación y terapia para niños con
+          condiciones del desarrollo. Ofrece acompañamiento familiar y un equipo
+          interdisciplinario con experiencia en TEA.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Aprehender IPS</h3>
+        <p><strong>WhatsApp:</strong> 304 3195610</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <em>Actualmente no disponible</em>
+        </p>
+        <p>
+          <em>Descripción:</em> Ofrece servicios de diagnóstico, terapia ocupacional,
+          fonoaudiología y programas de inclusión escolar. Cuenta con profesionales
+          certificados y talleres para padres.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Asopormen</h3>
+        <p><strong>WhatsApp:</strong> 3103302334</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://asopormen.org.co" target="_blank" rel="noopener">https://asopormen.org.co</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Brinda atención integral a niños, jóvenes y adultos con
+          discapacidad intelectual y TEA. Se enfocan en la inclusión social y la
+          rehabilitación cognitiva.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Somos IPS</h3>
+        <p><strong>WhatsApp:</strong> 3003241962</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://somosinternacional.com" target="_blank" rel="noopener">https://somosinternacional.com</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Centro de salud especializado en neurodesarrollo. Ofrece
+          terapias personalizadas, asesoría a familias y capacitaciones a
+          instituciones educativas.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Neurovida</h3>
+        <p><strong>WhatsApp:</strong> 318 5481301</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://neurovida.co" target="_blank" rel="noopener">https://neurovida.co</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Ofrece terapias basadas en evidencia, apoyo psicopedagógico
+          y un equipo de especialistas en TEA y trastornos del aprendizaje. Enfoque
+          integral para cada paciente.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Liga Colombiana de Autismo</h3>
+        <p><strong>WhatsApp:</strong> 3134376086</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://ligautismo.org" target="_blank" rel="noopener">https://ligautismo.org</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Organización líder en la defensa de derechos y la
+          concientización sobre el autismo. Ofrece orientación a familias, talleres
+          y programas de inclusión social.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>HYS IPS</h3>
+        <p><strong>WhatsApp:</strong> 3176592317</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://hysips.com" target="_blank" rel="noopener">https://hysips.com</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Centro con servicios de neurorehabilitación, fonoaudiología
+          y psicología. Especial énfasis en niños con TEA y otros trastornos del
+          desarrollo.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>NeuroAvanzar</h3>
+        <p><strong>WhatsApp:</strong> 3214020373</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="https://neuroavanzar.com" target="_blank" rel="noopener">https://neuroavanzar.com</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Cuenta con profesionales en neuropsicología, terapia física,
+          ocupacional y de lenguaje. Aborda el desarrollo integral de niños y
+          adolescentes con TEA.
+        </p>
+      </div>
+
+      <div class="ips-item">
+        <h3>Rehabilitdemos</h3>
+        <p><strong>WhatsApp:</strong> 321 9163360</p>
+        <p>
+          <strong>Sitio web:</strong>
+          <a href="http://rehabilitdemos.com.co" target="_blank" rel="noopener">http://rehabilitdemos.com.co</a>
+        </p>
+        <p>
+          <em>Descripción:</em> Ofrece programas de rehabilitación integral y atención
+          interdisciplinaria para niños con TEA. Incluye áreas de fonoaudiología,
+          terapia ocupacional y psicología.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Camino Azul. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script para cargar Google Maps con marcadores -->
+  <script>
+    // Datos de las IPS con coordenadas de ejemplo
+    // Reemplaza lat y lng con coordenadas reales si las conoces.
+    const ipsData = [
+      {
+        name: "Niños de papel IPS",
+        position: { lat: 7.118, lng: -73.114 },
+      },
+      {
+        name: "Aprehender IPS",
+        position: { lat: 7.119, lng: -73.116 },
+      },
+      {
+        name: "Asopormen",
+        position: { lat: 7.120, lng: -73.112 },
+      },
+      {
+        name: "Somos IPS",
+        position: { lat: 7.117, lng: -73.118 },
+      },
+      {
+        name: "Neurovida",
+        position: { lat: 7.122, lng: -73.115 },
+      },
+      {
+        name: "Liga Colombiana de Autismo",
+        position: { lat: 7.123, lng: -73.113 },
+      },
+      {
+        name: "HYS IPS",
+        position: { lat: 7.121, lng: -73.117 },
+      },
+      {
+        name: "NeuroAvanzar",
+        position: { lat: 7.119, lng: -73.110 },
+      },
+      {
+        name: "Rehabilitdemos",
+        position: { lat: 7.124, lng: -73.119 },
+      },
+    ];
+
+    function initMap() {
+      const centroBucaramanga = { lat: 7.119349, lng: -73.122741 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: centroBucaramanga,
+      });
+
+      // Agregamos marcadores
+      ipsData.forEach((ips) => {
+        new google.maps.Marker({
+          position: ips.position,
+          map: map,
+          title: ips.name,
+        });
+      });
+    }
+
+    // Obtener la API Key desde el servidor
+    fetch("http://localhost:3000/get-api-key")
+      .then((response) => response.json())
+      .then((data) => {
+        const script = document.createElement("script");
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${data.apiKey}&callback=initMap`;
+        script.async = true;
+        document.head.appendChild(script);
+      })
+      .catch((error) => console.error("Error obteniendo la API Key:", error));
+  </script>
+</body>
+</html>
